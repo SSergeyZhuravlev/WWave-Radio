@@ -1689,6 +1689,12 @@ background-image: url(../img/broadcasts-mind-desctop.png);
     transition: opacity .3s ease-in-out;
 }
 
+.playlists__content__play--svg {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
 .playlists__content__link {
     display: flex;
     flex-direction: column;

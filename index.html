@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/wwave-favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
@@ -55,12 +55,12 @@
                               О&nbsp;нас
                           </a>
                       </li>
-                      <div class="header__main__list-img header__main__list-img-1"></div>
-                      <div class="header__main__list-img header__main__list-img-2"></div>
+                      <li class="header__main__list-img header__main__list-img-1"></li>
+                      <li class="header__main__list-img header__main__list-img-2"></li>
                     </ul>
                 </nav>
                 <div class="header__main__btns flex">
-                    <input type="text" class="header__search__field" placeholder="Поиск по сайту" role="search">
+                    <input type="text" class="header__search__field" placeholder="Поиск по сайту">
                     <button class="header__search__btn btn-reset flex" aria-label="Кнопка поиск">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -115,7 +115,7 @@
                     <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
                     <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
                   </svg>
-                  <p class="header__live__btn--text">Что в&nbsp;эфире?</p>
+                  <span class="header__live__btn--text">Что в&nbsp;эфире?</span>
               </button>
               <div class="header__music">
                   <ul class="header__music__list list-reset flex">
@@ -158,7 +158,7 @@
                   </ul>
                 </div>
                 <img src="img/header-age.png" alt="Возрастное ограничение 12+" class="header__age--img">
-                <button class="header__music__play header__extra__btn btn-reset">
+                <button class="header__music__play header__extra__btn btn-reset" aria-label="Кнопка play">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="header__btn__play" clip-path="url(#clip0_24531_5430)">
                             <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
@@ -198,9 +198,9 @@
                 </h2>
                 <div class="podcasts__content flex">
                     <ul class="podcasts__list list-reset flex" aria-label="Список подкастов">
-                      <li class="podcasts__item" aria-label="Подкаст Европа 19 век">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--europe"></div>
-                          <time class="podcast__date" datetime="2022-06-14" aria-label="Дата подкаста">14 июня</time>
+                          <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--europe">
                               <div class="podcast__descr flex">
                                   <div class="podcast__descr--text">
@@ -210,7 +210,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Европа. XIX век">
                                           Европа. XIX век
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -245,7 +245,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст О музыке">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--aboutMusic"></div>
                           <time class="podcast__date" datetime="2022-06-14">11 июня</time>
                           <div class="podcast__preview podcast__preview--aboutMusic">
@@ -257,7 +257,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста О музыке">
                                           О музыке
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -292,7 +292,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Люди сегодня">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--people"></div>
                           <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--people">
@@ -304,7 +304,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Люди сегодня">
                                           Люди сегодня
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Анна Васильева">
+                                      <span class="podcast__presenter">
                                           Анна Васильева
                                       </span>
                                   </div>
@@ -339,7 +339,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Хэллоу, Африка!">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--africa"></div>
                           <time class="podcast__date" datetime="2022-06-14">5 июня</time>
                           <div class="podcast__preview podcast__preview--africa">
@@ -351,7 +351,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Хэллоу, Африка!">
                                           Хэллоу, Африка!
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Пётр Дмитриевский">
+                                      <span class="podcast__presenter">
                                           Пётр Дмитриевский
                                       </span>
                                   </div>
@@ -386,7 +386,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Обо всём">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--everything"></div>
                           <time class="podcast__date" datetime="2022-06-14">2 июня</time>
                           <div class="podcast__preview podcast__preview--everything">
@@ -398,7 +398,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Обо всём">
                                           Обо всём
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Пётр Дмитриевский">
+                                      <span class="podcast__presenter">
                                           Пётр Дмитриевский
                                       </span>
                                   </div>
@@ -433,7 +433,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Физика цвета">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--physic"></div>
                           <time class="podcast__date" datetime="2022-06-14">28 мая</time>
                           <div class="podcast__preview podcast__preview--physic">
@@ -445,7 +445,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Физика цвета">
                                           Физика цвета
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Татьяна Флеганова">
+                                      <span class="podcast__presenter">
                                           Татьяна Флеганова
                                       </span>
                                   </div>
@@ -480,7 +480,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Источник звука">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--sound"></div>
                           <time class="podcast__date" datetime="2022-06-14">22 мая</time>
                           <div class="podcast__preview podcast__preview--sound">
@@ -492,7 +492,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Источник звука">
                                           Источник звука
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Пётр Дмитриевский">
+                                      <span class="podcast__presenter">
                                           Пётр Дмитриевский
                                       </span>
                                   </div>
@@ -527,7 +527,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Правила этикета">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--ethics"></div>
                           <time class="podcast__date" datetime="2022-06-14">18 мая</time>
                           <div class="podcast__preview podcast__preview--ethics">
@@ -539,7 +539,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Правила этикета">
                                           Правила этикета
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Татьяна Флеганова">
+                                      <span class="podcast__presenter">
                                           Татьяна Флеганова
                                       </span>
                                   </div>
@@ -574,7 +574,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Европа 19 век">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--europe"></div>
                           <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--europe">
@@ -586,7 +586,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Европа. XIX век">
                                           Европа. XIX век
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -621,7 +621,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Европа 19 век">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--europe"></div>
                           <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--europe">
@@ -633,7 +633,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Европа. XIX век">
                                           Европа. XIX век
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -668,7 +668,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Европа 19 век">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--europe"></div>
                           <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--europe">
@@ -680,7 +680,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Европа. XIX век">
                                           Европа. XIX век
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -715,7 +715,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="podcasts__item" aria-label="Подкаст Европа 19 век">
+                      <li class="podcasts__item">
                           <div class="podcasts__item__img podcasts__item__img--europe"></div>
                           <time class="podcast__date" datetime="2022-06-14">14 июня</time>
                           <div class="podcast__preview podcast__preview--europe">
@@ -727,7 +727,7 @@
                                       <h3 class="podcast__preview__title" aria-label="Название подкаста Европа. XIX век">
                                           Европа. XIX век
                                       </h3>
-                                      <span class="podcast__presenter" aria-label="Автор подкаста Дмитрий Гутенберг">
+                                      <span class="podcast__presenter">
                                           Дмитрий Гутенберг
                                       </span>
                                   </div>
@@ -789,7 +789,6 @@
                         </div>
                         <div class="broadcasts__content__options--bottom">
                             <picture class="broadcasts__micro">
-                                <source srcset="img/broadcasts-microphone-mobile.png">
                                 <source srcset="img/broadcasts-microphone-tablet-768.png" media="(max-width: 992px)">
                                 <source srcset="img/broadcasts-microphone-tablet.png" media="(max-width: 1200px)">
                                 <img class="broadcasts__micro--img" src="img/broadcasts-microphone-desctop.png" alt="Изображение микрофона">
@@ -894,7 +893,6 @@
                     </ul>
                     <div class="broadcasts__content__options--tablet">
                         <picture class="broadcasts__micro">
-                            <source srcset="img/broadcasts-microphone-mobile.png">
                             <source srcset="img/broadcasts-microphone-tablet-768.png" media="(max-width: 992px)">
                             <source srcset="img/broadcasts-microphone-tablet.png" media="(max-widh: 1200px)">
                             <img class="broadcasts__micro--img" src="img/broadcasts-microphone-desctop.png" alt="Изображение микрофона">
@@ -1133,8 +1131,7 @@
                               <div class="guests__preview">
                                 <div class="guest__descr" id="Martynova-1" data-target="Martynova-1">
                                     <picture class="guest__photo">
-                                        <source srcset="img/" media="(max-width: 546px)">
-                                        <source srcset="guest-photo-Martynova-768.jpgimg/" media="(max-wid992 768px)">
+                                        <source srcset="guest-photo-Martynova-768.jpg" media="(max-width: 768px)">
                                         <source srcset="img/" media="(max-width: 1200px)">
                                         <img src="img/guest-photo-Martynova-desctop.jpg" alt="Фото выбранного гостя" class="guest__img">
                                     </picture>
@@ -1145,11 +1142,6 @@
                                                     <g clip-path="url(#clip0_24531_5305)">
                                                     <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#A1A6B4"/>
                                                     </g>
-                                                    <defs>
-                                                    <clipPath id="clip0_24531_5305">
-                                                    <rect width="24" height="24" fill="white"/>
-                                                    </clipPath>
-                                                    </defs>
                                                 </svg>
                                             </a>
                                         </li>
@@ -1159,11 +1151,6 @@
                                                     <g clip-path="url(#clip0_24531_5308)">
                                                     <path d="M15.78 22V14.26H18.3722L18.76 11.2511H15.78V9.33111C15.78 8.46 16.0222 7.86556 17.2711 7.86556H18.8644V5.17444C18.0931 5.09261 17.3179 5.05292 16.5422 5.05556C14.2456 5.05556 12.6733 6.45778 12.6733 9.03333V11.2511H10.0756V14.26H12.6733V22H3.11111C2.81643 22 2.53381 21.8829 2.32544 21.6746C2.11706 21.4662 2 21.1836 2 20.8889V3.11111C2 2.81643 2.11706 2.53381 2.32544 2.32544C2.53381 2.11706 2.81643 2 3.11111 2H20.8889C21.1836 2 21.4662 2.11706 21.6746 2.32544C21.8829 2.53381 22 2.81643 22 3.11111V20.8889C22 21.1836 21.8829 21.4662 21.6746 21.6746C21.4662 21.8829 21.1836 22 20.8889 22H15.78Z" fill="#A1A6B4"/>
                                                     </g>
-                                                    <defs>
-                                                    <clipPath id="clip0_24531_5308">
-                                                    <rect width="24" height="24" fill="white"/>
-                                                    </clipPath>
-                                                    </defs>
                                                 </svg>
                                             </a>
                                         </li>
@@ -1173,11 +1160,6 @@
                                                     <g clip-path="url(#clip0_24531_5311)">
                                                     <path d="M22.1621 5.65593C21.3986 5.99362 20.589 6.2154 19.7601 6.31393C20.6338 5.79136 21.2878 4.96894 21.6001 3.99993C20.7801 4.48793 19.8811 4.82993 18.9441 5.01493C18.3147 4.34151 17.4804 3.89489 16.571 3.74451C15.6616 3.59413 14.728 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0772 6.14972C11.6979 6.98983 11.6068 7.93171 11.8181 8.82893C10.1552 8.74558 8.52838 8.31345 7.04334 7.56059C5.55829 6.80773 4.24818 5.75097 3.19805 4.45893C2.82634 5.09738 2.63101 5.82315 2.63205 6.56193C2.63205 8.01193 3.37005 9.29293 4.49205 10.0429C3.82806 10.022 3.17869 9.84271 2.59805 9.51993V9.57193C2.59825 10.5376 2.93242 11.4735 3.5439 12.221C4.15538 12.9684 5.00653 13.4814 5.95305 13.6729C5.33667 13.84 4.69036 13.8646 4.06305 13.7449C4.32992 14.5762 4.85006 15.3031 5.55064 15.824C6.25123 16.3449 7.09718 16.6337 7.97005 16.6499C7.10253 17.3313 6.10923 17.8349 5.04693 18.1321C3.98464 18.4293 2.87418 18.5142 1.77905 18.3819C3.69075 19.6114 5.91615 20.264 8.18905 20.2619C15.8821 20.2619 20.0891 13.8889 20.0891 8.36193C20.0891 8.18193 20.0841 7.99993 20.0761 7.82193C20.8949 7.23009 21.6017 6.49695 22.1631 5.65693L22.1621 5.65593Z" fill="#A1A6B4"/>
                                                     </g>
-                                                    <defs>
-                                                    <clipPath id="clip0_24531_5311">
-                                                    <rect width="24" height="24" fill="white"/>
-                                                    </clipPath>
-                                                    </defs>
                                                 </svg>
                                             </a>
                                         </li>
@@ -1283,20 +1265,19 @@
                               <div class="guests__preview">
                                   <div class="guest__descr" id="Martynova-2" data-target="Martynova-2">
                                       <picture class="guest__photo">
-                                          <source srcset="img/" media="(max-width: 546px)">
-                                          <source srcset="guest-photo-Martynova-768.jpgimg/" media="(max-wid992 768px)">
+                                          <source srcset="guest-photo-Martynova-768.jpg" media="(max-width: 768px)">
                                           <source srcset="img/" media="(max-width: 1200px)">
                                           <img src="img/guest-photo-Martynova-desctop.jpg" alt="Фото выбранного гостя" class="guest__img">
                                       </picture>
                                       <ul class="guest__socials-list flex list-reset">
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                       </ul>
                                       <h4 class="guest__name">Ольга Мартынова</h4>
@@ -1400,20 +1381,19 @@
                               <div class="guests__preview">
                                   <div class="guest__descr" id="Martynova-3" data-target="Martynova-3">
                                       <picture class="guest__photo">
-                                          <source srcset="img/" media="(max-width: 546px)">
-                                          <source srcset="guest-photo-Martynova-768.jpgimg/" media="(max-wid992 768px)">
+                                          <source srcset="guest-photo-Martynova-768.jpg" media="(max-width: 768px)">
                                           <source srcset="img/" media="(max-width: 1200px)">
                                           <img src="img/guest-photo-Martynova-desctop.jpg" alt="Фото выбранного гостя" class="guest__img">
                                       </picture>
                                       <ul class="guest__socials-list flex list-reset">
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                       </ul>
                                       <h4 class="guest__name">Ольга Мартынова</h4>
@@ -1517,20 +1497,19 @@
                               <div class="guests__preview">
                                   <div class="guest__descr" id="Martynova-4" data-target="Martynova-4">
                                       <picture class="guest__photo">
-                                          <source srcset="img/" media="(max-width: 546px)">
-                                          <source srcset="guest-photo-Martynova-768.jpgimg/" media="(max-wid992 768px)">
+                                          <source srcset="guest-photo-Martynova-768.jpg" media="(max-width: 768px)">
                                           <source srcset="img/" media="(max-width: 1200px)">
                                           <img src="img/guest-photo-Martynova-desctop.jpg" alt="Фото выбранного гостя" class="guest__img">
                                       </picture>
                                       <ul class="guest__socials-list flex list-reset">
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                       </ul>
                                       <h4 class="guest__name">Ольга Мартынова</h4>
@@ -1634,20 +1613,19 @@
                               <div class="guests__preview">
                                   <div class="guest__descr" id="Martynova-5" data-target="Martynova-5">
                                       <picture class="guest__photo">
-                                          <source srcset="img/" media="(max-width: 546px)">
-                                          <source srcset="guest-photo-Martynova-768.jpgimg/" media="(max-wid992 768px)">
+                                          <source srcset="guest-photo-Martynova-768.jpg" media="(max-width: 768px)">
                                           <source srcset="img/" media="(max-width: 1200px)">
                                           <img src="img/guest-photo-Martynova-desctop.jpg" alt="Фото выбранного гостя" class="guest__img">
                                       </picture>
                                       <ul class="guest__socials-list flex list-reset">
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                           <li class="guest__socials__item">
-                                              <a href="#" class="guest__socials__link"></a aria-label="Ссылка на инстаграмм гостя">
+                                              <a href="#" class="guest__socials__link" aria-label="Ссылка на инстаграмм гостя"></a>
                                           </li>
                                       </ul>
                                       <h4 class="guest__name">Ольга Мартынова</h4>
@@ -1775,12 +1753,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1808,12 +1786,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1841,12 +1819,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1874,12 +1852,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1907,12 +1885,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1940,12 +1918,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -1973,12 +1951,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -1986,12 +1964,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2013,12 +1986,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2026,12 +1999,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2053,12 +2021,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2066,12 +2034,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2093,12 +2056,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2106,12 +2069,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2133,12 +2091,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2146,12 +2104,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2173,12 +2126,12 @@
                     <li class="playlists__content__item">
                         <a href="#" class="playlists__content__link">
                             <div class="playlists__content__images">
-                                <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="playlists__content__play">
+                                    <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
                                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
                                     </svg>
-                                </button>
+                                </div>
                                 <div class="playlists__content_country">
                                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2186,12 +2139,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                                 </div>
                                 <picture class="playlists__photo">
@@ -2215,12 +2163,12 @@
                   <li class="playlists__content__item flex">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2228,12 +2176,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                               </div>
                               <picture class="playlists__photo">
@@ -2255,12 +2198,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2268,12 +2211,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                               </div>
                               <picture class="playlists__photo">
@@ -2295,12 +2233,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2308,12 +2246,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                               </div>
                               <picture class="playlists__photo">
@@ -2335,12 +2268,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2348,12 +2281,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                               </div>
                               <picture class="playlists__photo">
@@ -2375,12 +2303,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <g clip-path="url(#clip0_44835_427)">
@@ -2388,12 +2316,7 @@
                                         <path d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z" fill="white"/>
                                         <path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z" fill="white"/>
                                         <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_44835_427">
-                                        <rect width="16" height="12" fill="white"/>
-                                        </clipPath>
-                                        </defs>
+                                      </g>
                                   </svg>
                               </div>
                               <picture class="playlists__photo">
@@ -2415,12 +2338,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__text">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <h3 class="playlists__content__name" aria-label="Molchat Doma">
                               Июльские Дни
                               </h3>
@@ -2433,12 +2356,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -2466,12 +2389,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -2499,12 +2422,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__text">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <h3 class="playlists__content__name" aria-label="Molchat Doma">
                               The Smiths
                               </h3>
@@ -2517,12 +2440,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -2550,12 +2473,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__images">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <div class="playlists__content_country">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -2583,12 +2506,12 @@
                   <li class="playlists__content__item">
                       <a href="#" class="playlists__content__link">
                           <div class="playlists__content__text">
-                              <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                              <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                               <h3 class="playlists__content__name" aria-label="Molchat Doma">
                               Gang Of Four
                               </h3>
@@ -2603,19 +2526,18 @@
                 <li class="playlists__content__item flex">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                </svg>
+                            </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
-                                  </svg>
-
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+                              </svg>
                             </div>
                             <picture class="playlists__photo">
                                 <source srcset="img/playlists-ploho-320.jpg" media="(max-width: 534px)">
@@ -2636,19 +2558,18 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                </svg>
+                            </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
-                                  </svg>
-
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+                              </svg>
                             </div>
                             <picture class="playlists__photo">
                                 <source srcset="img/playlists-ploho-320.jpg" media="(max-width: 534px)">
@@ -2669,19 +2590,18 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                </svg>
+                            </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
-                                  </svg>
-
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+                              </svg>
                             </div>
                             <picture class="playlists__photo">
                                 <source srcset="img/playlists-ploho-320.jpg" media="(max-width: 534px)">
@@ -2702,19 +2622,18 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                </svg>
+                            </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
-                                  </svg>
-
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+                              </svg>
                             </div>
                             <picture class="playlists__photo">
                                 <source srcset="img/playlists-ploho-320.jpg" media="(max-width: 534px)">
@@ -2735,19 +2654,18 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                </svg>
+                            </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
-                                  </svg>
-
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+                              </svg>
                             </div>
                             <picture class="playlists__photo">
                                 <source srcset="img/playlists-ploho-320.jpg" media="(max-width: 534px)">
@@ -2768,12 +2686,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__images">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <div class="playlists__content_country">
                               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
@@ -2801,12 +2719,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             Joy Division
                             </h3>
@@ -2819,12 +2737,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             The Cure
                             </h3>
@@ -2837,12 +2755,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             The Smiths
                             </h3>
@@ -2855,12 +2773,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             New Order
                             </h3>
@@ -2873,12 +2791,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             Bauhaus
                             </h3>
@@ -2891,12 +2809,12 @@
                 <li class="playlists__content__item">
                     <a href="#" class="playlists__content__link">
                         <div class="playlists__content__text">
-                            <button class="playlists__content__play btn-reset">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
-                                        <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
-                                    </svg>
-                                </button>
+                            <div class="playlists__content__play">
+                                  <svg class="playlists__content__play--svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
+                                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="white"/>
+                                  </svg>
+                              </div>
                             <h3 class="playlists__content__name" aria-label="Molchat Doma">
                             Gang Of Four
                             </h3>
@@ -2928,9 +2846,6 @@
                         <img src="img/offer-img-new-desktop.png" alt="Наклейка New" class="offer__new--img">
                     </picture>
                     <picture class="offer__picture">
-                        <source>
-                        <source>
-                        <source>
                         <img src="img/offer-img-desktop.png" alt="Изображение спецпредложения" class="offer__picture--img">
                     </picture>
                 </div>
@@ -2953,11 +2868,6 @@
                                 <path d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288"/>
                                 <path d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z" fill="#121723"/>
                             </g>
-                            <defs>
-                                <clipPath id="clip0_44748_1262">
-                                    <rect x="0.5" width="20" height="20" rx="10" fill="white"/>
-                                </clipPath>
-                            </defs>
                         </svg>
                         <span class="offer__btn__text">Купить на&nbsp;Яндекс.Маркет</span>
                     </button>
@@ -2984,7 +2894,6 @@
                     <div class="about-us__swiper__wrapper swiper-wrapper">
                         <div class="about-us__slide about-us__slide--gutenberg swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-gutenberg-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-gutenberg-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-gutenberg-desktop.jpg" alt="" class="about-us__picture--img">
@@ -2998,7 +2907,6 @@
                         </div>
                         <div class="about-us__slide about-us__slide--vasileva swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-vasileva-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-vasileva-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-vasileva-desktop.jpg" alt="" class="about-us__picture--img">
@@ -3012,7 +2920,6 @@
                         </div>
                         <div class="about-us__slide about-us__slide--dmitriebsky swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-dmitrievsky-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-dmitrievsky-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-dmitrievsky-desktop.jpg" alt="" class="about-us__picture--img">
@@ -3026,7 +2933,6 @@
                         </div>
                         <div class="about-us__slide about-us__slide--fleganova swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-fleganova-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-fleganova-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-fleganova-desktop.jpg" alt="" class="about-us__picture--img">
@@ -3040,7 +2946,6 @@
                         </div>
                         <div class="about-us__slide about-us__slide--prokopev swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-prokopev-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-prokopev-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-prokopev-desktop.jpg" alt="" class="about-us__picture--img">
@@ -3054,7 +2959,6 @@
                         </div>
                         <div class="about-us__slide about-us__slide--kortneva swiper-slide">
                             <picture class="about-us__picture">
-                                <source>
                                 <source srcset="img/about-us-kortneva-768.jpg" media="(max-width: 992px)">
                                 <source srcset="img/about-us-kortneva-1024.jpg" media="(max-width: 1200px)">
                                 <img src="img/about-us-kortneva-desktop.jpg" alt="" class="about-us__picture--img">
@@ -3118,11 +3022,6 @@
                                   <g clip-path="url(#clip0_24531_5372)">
                                   <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#D2D5DD"/>
                                   </g>
-                                  <defs>
-                                  <clipPath id="clip0_24531_5372">
-                                  <rect width="24" height="24" fill="white"/>
-                                  </clipPath>
-                                  </defs>
                                 </svg>
                             </a>
                         </li>
@@ -3133,11 +3032,6 @@
                                   <path d="M10.2338 8.14624C10.2338 9.0928 11.0569 9.86023 12.0724 9.86023C13.088 9.86023 13.9111 9.0928 13.9111 8.14624C13.9111 7.19968 13.088 6.43231 12.0724 6.43231C11.0569 6.43231 10.2338 7.19968 10.2338 8.14624Z" fill="#D2D5DD"/>
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C4.68629 2 2 4.68629 2 8V16C2 19.3137 4.68629 22 8 22H16C19.3137 22 22 19.3137 22 16V8C22 4.68629 19.3137 2 16 2H8ZM7.62436 8.14617C7.62436 5.85633 9.61571 4 12.0724 4C14.5292 4 16.5206 5.85633 16.5206 8.14617C16.5206 10.4361 14.5292 12.2925 12.0724 12.2925C9.61571 12.2925 7.62436 10.4361 7.62436 8.14617ZM16.5472 14.4252C16.4907 14.4674 15.4236 15.2535 13.6427 15.5916L16.3307 18.0748C16.8034 18.5147 16.804 19.2285 16.3321 19.6691C15.8602 20.1097 15.0946 20.1104 14.6216 19.6704L12.012 17.3016L9.64177 19.6552C9.4046 19.8846 9.08805 20 8.77109 20C8.46897 20 8.16645 19.8952 7.93169 19.6842C7.45075 19.252 7.43691 18.5384 7.90062 18.0902L10.4519 15.6048C8.62134 15.2746 7.51009 14.468 7.45295 14.4252C6.93171 14.0357 6.84811 13.3262 7.26591 12.8404C7.6839 12.3547 8.44492 12.2767 8.96616 12.6662C8.97719 12.6744 10.1394 13.4883 12.012 13.4895C13.8847 13.4883 15.0228 12.6744 15.0338 12.6662C15.5551 12.2767 16.3163 12.3547 16.7341 12.8404C17.1519 13.3262 17.0683 14.0357 16.5472 14.4252Z" fill="#D2D5DD"/>
                                   </g>
-                                  <defs>
-                                  <clipPath id="clip0_24531_5373">
-                                  <rect width="24" height="24" fill="white"/>
-                                  </clipPath>
-                                  </defs>
                                 </svg>
                             </a>
                         </li>
