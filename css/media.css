@@ -739,7 +739,7 @@
     .header__entrance__btn {
         position: absolute;
         top: -55px;
-        right: 5px;
+        right: -15px;
         padding: 9.5px 24px;
         margin-bottom: 27px;
     }
@@ -761,7 +761,7 @@
     .header__search__btn {
         position: absolute;
         bottom: -33px;
-        right: 5px;
+        right: -15px;
         margin-right: 0;
     }
 
