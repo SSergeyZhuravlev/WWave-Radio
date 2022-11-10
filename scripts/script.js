@@ -51,22 +51,22 @@ music.forEach(function(e) {
 
 // Header live opening
 
-let liveBtn = document.querySelector('.header__live__btn');
+let liveBtn = document.querySelector('.header__live');
 let liveItem = document.querySelector('.header__music');
 let liveContainer = document.querySelector('.header__container--bottom');
 
 liveBtn.addEventListener('click', function () {
-      liveBtn.classList.toggle('header__live__btn--active')
+      liveBtn.classList.toggle('header__live--active')
       liveItem.classList.toggle('header__music--active');
       liveContainer.classList.toggle('header__container--active');
   });
 
 // Podcasts play
-let playBtn = document.querySelectorAll('.podcast__play');
+let playBtn = document.querySelectorAll('.podcasts__play');
 
 playBtn.forEach(function (play) {
     play.addEventListener('click', function (toggle) {
-        toggle.currentTarget.closest('.podcast__play').classList.toggle('podcast__play--toggle');
+        toggle.currentTarget.closest('.podcasts__play').classList.toggle('podcasts__play--toggle');
     });
 });
 
@@ -100,19 +100,19 @@ $(function() {
 
 // Guests tabs
 
-let guestBtn = document.querySelectorAll('.guest__btn');
-let guestItem = document.querySelectorAll('.guest__descr');
+let guestBtn = document.querySelectorAll('.guests__btn');
+let guestItem = document.querySelectorAll('.guests__descr');
 let guests = document.querySelector('.guests');
 
 guestBtn.forEach(function (elementGuest) {
     elementGuest.addEventListener('click', function (eGuest) {
         const path = eGuest.currentTarget.dataset.path;
 
-        guestBtn.forEach(function(btnGuests) { btnGuests.classList.remove('guest__btn--active') });
+        guestBtn.forEach(function(btnGuests) { btnGuests.classList.remove('guests__btn--active') });
         eGuest.currentTarget.classList.add('guest__btn--active');
 
-        guestItem.forEach(function(elementGuest) { elementGuest.classList.remove('guest__descr--active') });
-        document.querySelector(`[data-target="${path}"]`).classList.add('guest__descr--active');
+        guestItem.forEach(function(elementGuest) { elementGuest.classList.remove('guests__descr--active') });
+        document.querySelector(`[data-target="${path}"]`).classList.add('guests__descr--active');
 
         guests.classList.add('guests--active')
     });
@@ -196,6 +196,13 @@ const swiper = new Swiper('.about-us__swiper', {
 const validate = new window.JustValidate('.about-us__form');
 
 validate
+  .addField('#message', [
+    {
+      rule: 'required',
+      errorMessage: 'Напишите нам'
+    }
+  ])
+
   .addField('#name', [
     {
         rule: 'minLength',
@@ -226,4 +233,9 @@ validate
         rule: 'email',
         errorMessage: 'Неверный E-mail'
     }
-  ]);
+  ])
+
+  .addRequiredGroup(
+    '#agree-1',
+    'Вы должны разрешить обработку данных'
+  )
